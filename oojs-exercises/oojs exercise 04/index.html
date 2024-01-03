@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 4</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    // const cat = {
+    //   name : 'Bertie',
+    //   breed : 'Cymric',
+    //   color : 'white',
+    //   greeting: function() {
+    //     console.log(`Hello, said ${this.name} the ${this.breed}.`);
+    //   }
+    // }
+
+    // const cat2 = {
+    //   name : 'Lucy',
+    //   breed : 'Maine Coon',
+    //   color : 'brown',
+    //   greeting: function() {
+    //     console.log(`Hello, said ${this.name} the ${this.breed}.`);
+    //   }
+    // }
+
+    function Pet(name, breed, color){
+      this.name = name;
+      this.breed = breed;
+      this.color = color;
+      this.greeting = function(){
+        console.log(`Hello, said ${this.name} the ${this.breed}.`);
+      }
+    }
+
+    const cat = new Pet('Bertie', 'Cymric', 'white');
+    const cat2 = new Pet('Lucy', 'Maine Coon', 'brown');
+
+
+    console.log(cat.greeting())
+    console.log(cat2.greeting())
+  
+  
+  </script>
+
+</html>

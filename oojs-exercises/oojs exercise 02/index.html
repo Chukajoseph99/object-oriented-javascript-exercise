@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+    
+    let band = {
+      name: "Linkin Park",
+      nationality: "United States",
+      genre: "Rock",
+      members: 8,
+      formed: 1996,
+      split: false,
+      albums: [
+        {
+          name: "Hybrid Theory",
+          releaseDate: 2000, 
+        },
+        {
+          name: "Meteora",
+          releaseDate: 2003, 
+        },     
+        {
+          name: "Minutes To Midnight",
+          releaseDate: 2007, 
+        }, 
+      ]
+
+
+    }
+
+    bandInfo = `The greatest alternative rock band of all time is ${band.name}. and they are from ${band.nationality}, The band has been together since ${band.formed}. I love their ${band.genre} style. The title of the first album i heared was ${band.albums[0].name} and it was released in the year ${band.albums[0].releaseDate}.`
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
